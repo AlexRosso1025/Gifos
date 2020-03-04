@@ -7,23 +7,29 @@
     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="day">
     <header>
         <div class="title">
             <h1>¡Bienvenidos/as a Guifos.com! ------Donde los gifs están.////// Número de visitas: 12.765.803</h1>
         </div>
-    </header>
-    <div class="body-margin">
-        <div class="imagen">
-            <img src="assets/gifOF_logo.png" alt="">
-            <div class="menu">
-                <input type="button" value="Crear Guifos">
-                <input type="button" value="Elegir tema">
-                <input type="image" src="assets/dropdown.svg" alt="">
-                <a href=""><ins>M</ins>is gifos</a>
+        <nav>
+            <div class="body-margin">
+                <div class="imagen">
+                    <img src="assets/gifOF_logo.png" alt="">
+                    <div class="menu">
+                        <button type="submit">Crear Guifos</button>
+                        <button type="submit">Elegir tema</button>
+                        <input type="image" src="assets/dropdown.svg" alt="">
+                        <div class="menu-list">
+                            <input type="button" value="blue" onclick="cambiarFondo(this)">
+                            <input type="button" value="black" onclick="cambiarFondo(this)">
+                        </div>
+                        <a href=""><ins>M</ins>is Gifos</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
     <script src="app.js"></script>
 </body>
 </html>
