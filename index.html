@@ -5,25 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gifos</title>
     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/saylor-day.css" id="theme">
 </head>
 <body>
     <header>
         <div class="title">
             <h1>¡Bienvenidos/as a Guifos.com! ------Donde los gifs están.////// Número de visitas: 12.765.803</h1>
         </div>
-    </header>
-    <div class="body-margin">
-        <div class="imagen">
-            <img src="assets/gifOF_logo.png" alt="">
-            <div class="menu">
-                <input type="button" value="Crear Guifos">
-                <input type="button" value="Elegir tema">
-                <input type="image" src="assets/dropdown.svg" alt="">
-                <a href=""><ins>M</ins>is gifos</a>
+        <nav>
+            <div class="body-margin">
+                <div class="imagen">
+                    <div>
+                        <a href="index.html">
+                            <img id="logo" src="assets/gifOF_logo.png" alt="Logo de la página web">
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <button type="submit">Crear Guifos</button>
+                        <button type="submit">Elegir tema</button>
+                        <button type="submit" id="tema" onclick="menu();"><img src="assets/dropdown.svg" alt=""></button>
+                        <div class="menu-list" id="menu-list">
+                            <button id="sailor-day" onclick="cambiarTema('day');" class="first-letter" disabled>Sailor Day</button>
+                            <button id="sailor-night" onclick="cambiarTema('night');">Sailor Night</button>
+                        </div>
+                        <a href="#"><ins>M</ins>is Gifos</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
+    <main class="body-margin">
+        <section id="lookingFor">
+            <div class="search">
+                <div class="lookHeader">
+                    <h1>Buscar</h1>
+                </div>
+                <div class="bodyLook">
+                    <div class="lookInput">
+                        <input id="searchGif" type="text" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" oninput="validarInput();">
+                    </div>
+                    <button id="buttonSearch" onclick="getValue();" disabled><img id ="imageSearch" src="assets/lupa_inactive.svg" alt="lupa">Buscar</button>
+                </div>
+                <div id="aviso">
+
+                </div>
+            </div>
+            <div id="sugerenciaBusqueda" class="sugerenciaBusqueda">
+                <button>Dragon Ball</button>
+                <button>Hi</button>
+                <button>None</button>
+            </div>
+        </section>
+        <section id="gifResult">
+            
+        </section>
+        <section id="suggest">
+            <div class="titleFixed">
+                <p>Hoy te sugerimos:</p>
+            </div>
+            <div id="suggest-gifs" class="gifos">
+                
+            </div>
+        </section>
+        <section id="trending">
+            <div class="titleFixed">
+                <p>Tendencias:</p>
+            </div>
+            <div id="trending-gifs" class="gifos">
+
+            </div>
+        </section>
+    </main>
     <script src="app.js"></script>
 </body>
 </html>
