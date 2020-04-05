@@ -1,0 +1,271 @@
+body{
+    width: 100%;
+    margin: 0;
+}
+
+input{
+    margin: 0;
+}
+
+a{
+    font-family: ChakraPetch-Regular;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+h1,p{
+    margin: 0;
+    font-family: ChakraPetch Regular;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-weight: 400;
+    text-align: start;
+    padding: 0.1875rem 0px 0.25rem 0.4375rem;
+}
+
+.title{
+    margin: 0 0.063em 2.1875rem 0.063rem;
+}
+
+.title h1, .lookHeader h1,.imageTitle,#aviso p, #trending-gifs .gifItem p{
+    height: 1rem;
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    box-shadow: 0 1px 0 0 #110038;
+}
+
+.imageTitle{
+    display: flex;
+    justify-content: space-between;
+    height: 1.5rem;
+}
+
+.imagen{
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-margin{
+    margin: 1rem 8.75rem 0px 6.25rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.first-letter::first-letter{
+    text-decoration: underline;
+}
+
+.menu button{
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    font-size: 16px;
+    padding: 0.4795rem 1.603rem;
+    margin-left: 1rem;
+}
+
+.menu #tema{
+    position: relative;
+    padding: 0.4795rem 0.75rem;
+    right: 1.4rem;
+    margin-right: 1.0313rem;
+}
+
+ul{
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.menu-list{
+    display: none;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    width: 170px;
+    height: 102px;
+    position: absolute;
+    right:247px;
+}
+
+.menu-list input:first-child{
+    margin: 10px;
+    padding:8px;
+}
+
+.menu-list input:nth-child(2n){
+    margin: 10px;
+    padding:3px;
+}
+
+.serch{
+    width: 100%;
+    padding: 2px;
+}
+
+.bodyLook{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1.03128rem;
+    background-color: #E6E6E6;
+    text-align: center;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 0 0 0 #FFFFFF;
+}
+
+.lookInput{
+    width: 100%;
+}
+
+.lookInput input{
+    height: 3rem;
+    padding-left: 1rem;
+    border: 1px solid #979797;
+    width: 97.5%;
+    margin-right: 0.5rem;
+}
+
+.bodyLook button{
+    margin-top: 6px;
+    width: 9.373%;
+    height: 2.25rem;
+    font-size: 100%;
+    color: rgba(180,180,180,1);
+    line-height: 22px;
+    background: #E6E6E6;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.bodyLook img{
+    margin-right: 10px;
+}
+
+.gifImage{
+    padding: 4px;
+    height:280px; 
+    width:280px;
+}
+
+.gifItem:nth-child(odd){
+    display: inline-grid;
+    margin-right: 16px;
+}
+
+.gifItem:nth-child(even){
+    display: inline-grid;
+    margin-right: 16px;
+}
+
+.gifItem{
+    display: inline-grid;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    margin-top: 1rem;
+}
+
+.gifItem:nth-child(4n){
+    margin-right: 0;
+}
+
+.deleteGif{
+    border: 0;
+    padding: 0;
+    border-radius: 0%;
+}
+
+.titleFixed {
+    display: flex;
+    margin: 50px 0px 20px;
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+  
+.titleFixed p {
+    padding: 6px;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0;
+}
+
+.more{
+    position: relative;
+    margin-left: 11px;
+    margin-top: -53px;
+    width: 81px;
+    height: 34px;
+    font-family: ChakraPetch-Regular;
+    background: #4180F2;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+    color: #FFFFFF;
+}
+
+#trending-gifs .gifItem p{
+    display: none;
+}
+
+#trending-gifs .gifItem:hover p{
+    position: absolute;
+    display: block;
+    margin-top: 264px;
+    width: 280px;
+}
+
+.gifItem:hover img, #buttonSearch:active, .more:active,.sugerenciaBusqueda button:hover, .menu button:hover{
+    outline: 1px dotted #110038;
+    outline-offset: -4px;
+}
+
+.sugerenciaBusqueda{
+    display: none;
+    position: absolute;
+    grid-row: 3;
+    grid-column: 2;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    padding:1rem 8.15rem 1rem 0rem;
+}
+
+.lookHeader h1{
+    box-shadow: inset -2px 0 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF
+}
+
+.menu-list button{
+    z-index: 3;
+    width: 150px;
+    height: 36px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.sugerenciaBusqueda button{
+    text-align: left;
+    padding-left: 1rem;
+    width: 1055px;
+    height: 34px;
+    margin-top: 0.6875rem;
+    margin-left: 1rem;
+}
+
+#sailor-day{
+    background: #FFF4FD;
+    border: 1px solid #CCA6C9;
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+    padding: 0.5105rem 1.603rem 0.5105rem 0rem;
+}
+
+#sailor-night{
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    padding: 0.5105rem 1.603rem 0.5105rem 0rem;
+}
+
+.show {display:block;}
