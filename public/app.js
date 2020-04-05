@@ -86,7 +86,7 @@ function getTrendingResults(){
                             +title.replace(/ /g, "")+"</p>"
                             +"</div>"
             image.innerHTML += contenido;
-        }
+    }
     })
     .catch((error) =>{
         console.log(error);
@@ -150,7 +150,7 @@ function getSearchResults(search) {
                 var finding = document.getElementById("finder-gifs");
                 for (i in dataArray){
                     var src=dataArray[i].images.original.url;
-                    var title= dataArray[i].title;  
+                    var title= dataArray[i].title;
                     var contenido = "<div class=gifItem>" 
                                     +"<img src='"+src+"' class=gifImage alt= '"+title+"'>"+"</div>";
                     finding.innerHTML += contenido;
